@@ -1,0 +1,1055 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+h1{
+    font-size: 60px;
+    line-height: 30px;
+    color:black;
+    
+}
+h2{
+    font-size: 46px;
+    line-height: 10px;
+    color:black;
+    /* margin-bottom: 0px; */
+    margin-top: 15px;
+}
+h4{
+font-size: 30px;
+color:black;
+
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+   
+}
+p{
+    font-size: 16px;
+    color:black;
+    margin: 0px 0px 10px 10px;
+   
+
+}
+.section-p1{
+    padding:20px 20px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+    margin: 0;
+    margin-right: 0;
+    /* background-color: black; */
+}
+
+/* header for website? */
+
+#header .logo{
+    height: 50px;
+    width: 50px;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 80px;
+    background-color:  #f4f7f7; 
+    box-shadow: 0 5px 15px rgb(107, 150, 107);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 40px;
+    position: relative;
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3 ease;
+
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:#088178;
+    cursor: pointer;
+     
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 38px;
+}
+#hero{
+   /* margin-top: -26.5px; */
+    background: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/SFp1bALngj0sessj8/videoblocks-attractive-young-black-plus-size-model-wearing-a-black-fishnet-top-and-black-tight-pants-on-white-background-beauty-plus-size-curvy-model_s1wheb9a_thumbnail-1080_01.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+     padding: 0 100px;
+     display: flex; 
+      flex-direction: column; 
+     align-items: flex-start;
+     justify-content: center;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color:  #088178;
+    font-size: 60px;
+    line-height: 100px;
+}
+#hero p{
+    margin-top: -11px;
+}
+
+#hero button{
+     border: #088178;
+     border-radius: 10px;
+     padding: 10px;
+     background-color: rgb(209, 181, 129);
+}
+/* features  */
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#feature .fe-box{
+    width: 230px;
+    text-align: center;
+    padding: 19px 25px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 2px solid#cce7d0;
+    border-radius: 24px;
+    margin: 15px 0;
+
+}
+#feature .fe-box img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    
+
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+   
+
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 11px 12px 12px 13px;
+    line-height: 8px;
+    border-radius: 10px;
+    color: #088178;
+    background-color:#fddde4 ;
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: #d0f1f1;
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(5) h6{  
+     background-color: #f6dbf6;}
+#feature .fe-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+/* products */
+#produt1{
+    text-align: center;
+    position: relative;
+}
+#produt1 .container{
+    display: flex ;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    padding: px;
+}
+#produt1 .pro{
+    width: 21%;
+    min-width: 200px;
+    padding: 23px 17px;
+    border:2px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin:  15px 20px;
+    transition: 0.2s ease;
+    position: relative;
+}
+#produt1 .pro:hover{
+    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.06) ;
+}
+#produt1 .pro img{
+    width: 90%;
+    border-radius:20px ;
+    height: 300px;
+}
+#produt1 .pro .des{
+    text-align:start ;
+    padding: 10px 0;
+}
+#produt1 .pro .des span{
+    color: #606063 ;
+    font-size: 30px;
+}
+#produt1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 18px;
+}
+#produt1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 141, 25);
+}
+#produt1 .pro .des h4{
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+
+}
+#produt1 .cart{
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 400;
+     color: #088178;
+     border: 1px solid #cce7d0;
+     position: absolute;
+     bottom: 23px;
+     right: 10px;
+     padding: 2px;
+     font-size: 17px;
+     
+
+}
+#produt1 p{
+    color: #606063;
+    margin-top: 25px;
+}
+/* banner */
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://t4.ftcdn.net/jpg/05/96/62/65/360_F_596626503_jrzjZNYStDexiWxQFqO7oCh6M8PdMlJs.jpg');
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+
+}
+#banner h4{
+    color: white;
+    font-size: 16px;
+
+}
+#banner h2{
+    color: white;
+    font-size:30px;
+    padding:10px 0;
+    margin-top: 7px;
+
+}
+#banner h2 span{
+    color: red;
+}
+#banner button{
+   font-size: 14px;
+   font-weight: 600;
+   padding: 15px 30px;
+   background-color: #fff;
+   color: black;
+   border-radius: 4px;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   transition: 0.2s ease;
+   margin-top: 14px;
+}
+#banner button:hover{
+    background-color: #088178;
+    color: #fff;
+
+}
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 17px;
+
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/006/165/150/large_2x/smiling-woman-student-in-denim-clothes-with-backpack-reading-in-the-work-notebook-isolated-on-yellow-background-education-in-high-school-university-college-concept-photo.jpg');
+    width: 700px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+#sm-banner .banner-box button{
+    font-size: 13px;
+   font-weight: 600;
+   padding: 11px 18px;
+   background-color:transparent;
+   color: #fff;
+   cursor: pointer;
+   border: 1px solid #fff;
+   outline: none;
+   transition: 0.2sec ease;
+
+}
+#sm-banner .banner-box:hover button{
+    background-color: #088178;
+    border: 1px solid #088178 ;
+ }
+#sm-banner h4{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 13px;
+}
+#sm-banner h2{
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+
+}
+#sm-banner span{
+    margin-top: 25px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('https://img.freepik.com/free-photo/shirt-mockup-concept-with-plain-clothing_23-2149448749.jpg');
+    width: 700px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+#sm-banner .banner-box2 button{
+    font-size: 13px;
+   font-weight: 600;
+   padding: 11px 18px;
+   background-color:transparent;
+   color: #fff;
+   cursor: pointer;
+   border: 1px solid #fff;
+   outline: none;
+   transition: 0.2sec ease;
+
+}
+#sm-banner .banner-box2:hover button{
+    background-color: #088178;
+    border: 1px solid #088178 ;
+ }
+ #banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:0 60px;
+
+ }
+ #banner3 .banner-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210903/pngtree-clothing-store-casual-fashion-mens-photography-photos-with-pictures-image_796891.jpg');
+        width: 32%;
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    #banner3 .banner-box3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url('https://c1.wallpaperflare.com/preview/336/692/939/shirt-colour-clothing-fashion.jpg');
+        width: 32%;
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    #banner3 .banner-box4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url('https://w0.peakpx.com/wallpaper/19/228/HD-wallpaper-assorted-color-hanging-clothes-lot.jpg');
+        width: 32%;
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    #banner3 h2{
+        color: #fff;
+        margin-bottom: 0%;
+        font-weight: 900;
+        font-size: 25px;
+    }
+    #banner3 h3{
+        color:#ec544e;
+        font-weight: 800;
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    #new
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        background-image: url('https://static.vecteezy.com/system/resources/previews/006/080/234/large_2x/watercolor-swirl-with-deep-blue-cyan-gray-and-indigo-color-wave-clothes-or-marble-style-luxury-abstract-texture-backgrounds-modern-and-creative-art-photo.jpg');
+        background-repeat: no-repeat;
+        height: 20vh;
+        background-position: 20% 30% ;
+        background-color: #1a1a1a;
+    }
+    #new h4{
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 0;
+        padding-left: 60px;
+    }
+    #new p{
+        font-size: 15px;
+        font-weight: 700;
+        color: white;
+        margin-top:15px;
+        padding-left: 50px;
+    }
+    #new p span{
+        color: #ffbd27;
+
+    }
+    #new .form{
+        padding-right: 110px;
+        display: flex; 
+        width: 30%;
+
+    }
+    #new input{
+        height: 3.125rem;
+        padding: 0 0.8rem;
+        font-size: 15px;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        outline: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    #new button{
+        font-size: 13px;
+   font-weight: 600;
+   padding: 11px 18px;
+   background-color:#088178;
+   color: #fff;
+   cursor: pointer;
+   border: 1px solid #fff;
+   outline: none;
+   transition: 0.2sec ease;
+   white-space: nowrap;
+   /* border-radius: 4px; */
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+
+    } 
+    /* footer */
+   .section{
+    padding:10px 50px ;
+   }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer .colum{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    footer .colum .logo{
+        width: 150px;
+        height: 150px;
+    }
+    footer .colum h4{
+        margin-bottom: 0px;
+        padding-left: 35px;
+        font-size: 20px;
+        padding-bottom:15px;
+
+    }
+    footer .follow .icon{
+        padding-left: 35px;
+        color:#465b52 ;
+        cursor: pointer;
+        /* margin-top: 4px; */
+
+        /* padding: 3px; */
+    }
+    footer .colum p{
+        margin-top: 8px;
+        font-size: 15px;
+        padding-left: 27px;
+    }
+    footer a{
+        font-size: 15px;
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 30px;
+        padding-left: 35px;
+    }
+    footer i:hover{
+        color: #088178;
+
+    }
+    footer a:hover{
+        color: #088178;
+
+    }
+    footer .colum img{
+        width: 40%;
+        height: 100px;
+        padding-left: 35px;
+    }
+
+    .copy{
+     display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #088178;
+
+    }
+    .copy p{
+        color: white;
+    }
+    /* shop */
+    #page-header{
+        background-image: url('https://img.freepik.com/premium-photo/conceptual-image-colorful-red-blue-color-smoke-isolated-dark-black-background-halloween-concept-design-element_315337-866.jpg');
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+         padding: 0 100px;
+         display: flex; 
+          flex-direction: column; 
+         align-items: flex-start;
+         justify-content: center;
+    }
+    #page-header h2{
+        color: white;
+        padding-left: 550px;
+    }
+
+    #page-header p{
+        margin-top: 25px;
+        color: white;
+        padding-left: 515px;
+    }
+    /* pagei */
+    .section-p2{
+        padding: 60px 0px;
+    }
+
+    #pagei{
+        text-align: center;
+    }
+    #pagei a{
+        text-decoration: none;
+        background-color: #088178;
+        padding:8px 14px;
+        border-radius: 4px;
+        color: white;
+        font-weight: 600;
+
+
+    }
+    #detail{
+        display: flex;
+        margin-top: 20px;
+    }
+    #pagei a i{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #detail .single-pro-image{
+      width: 25%;
+      margin-right: 50px;
+    }
+    .small-image{
+        display: flex;
+        justify-content: space-between;
+
+
+          
+    }
+    .single-image{
+        flex-basis: 24%;
+        cursor: pointer;
+    }
+    .single-pro-details{
+        width: 50%;
+        padding-top: 30px;
+    }
+    .single-pro-details h4{
+        padding: 30px 0 10px 0;
+    }
+    .single-pro-details h2{
+        font-size: 30px;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    .single-pro-details select{
+        display: block;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+    .single-pro-details input{
+        width: 50px;
+        height: 47px;
+        padding-left: 10px;
+        font-size: 16px;
+        margin-right: 10px;
+        font-weight: 600;
+
+    }
+    .single-pro-details input:focus{
+        outline: none;
+    }
+    .single-pro-details button{
+        font-size: 13px;
+   font-weight: 600;
+   padding: 11px 18px;
+   background-color:#088178;
+   color: #fff;
+   cursor: pointer;
+   border: 1px solid #fff;
+   outline: none;
+   transition: 0.2s ease;
+   border-radius: 8px;
+
+    }
+    .single-pro-details span{
+        line-height: 30px;
+    }
+    .single-pro-image{
+        border: 2px solid #088178;
+        border-radius: 35px;
+        padding: 17px;
+    }
+
+    
+
+
+    @media(max-width:1030px)
+{
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right:-300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0,0,0.1);
+        padding:80px 0 0 10px ;
+        margin-top: 0;
+        transition: 0.3s;
+    }
+    #navbar.active{
+
+        right: 0px;
+
+    }
+    #navbar li{
+        margin-bottom: 20px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left:20px ;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: -270px;
+        left: 40px;
+        color: #222;
+
+    }
+    #close i{
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #hero{
+        
+        height: 70vh;
+       width: 100%;
+       padding: 0 100px;
+        background-position: top 30% right 30%;
+
+}    
+#feature{
+    justify-content: center;
+}
+#feature .fe-box{
+    
+    margin: 15px 15px;
+
+}
+#produt1 .container{
+   
+    justify-content: center;
+
+   
+}
+#produt1 .pro{
+   
+    margin:  15px ;
+   
+}
+#banner{
+    height: 20vh;
+}
+#sm-banner {
+    display: flex;
+   
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+        min-width: 100%;
+    height: 30vh;
+    margin-bottom: 13px;
+    
+}
+#sm-banner .banner-box2{
+    min-width: 100%;
+height: 30vh;
+
+}
+#banner3 .banner-box{
+   
+    width: 30%;
+   
+}
+#banner3 .banner-box3{
+   
+    width: 30%;
+   
+}
+#banner3 .banner-box4{
+   
+    width: 30%;
+   
+}
+#banner3{
+    padding-left: 34px;
+    padding-right: 35px;
+}
+#new {
+    
+    height: 15vh;
+   
+    }
+    #new {
+   flex-wrap: nowrap; 
+         
+    }
+   #new .form{
+    width: 45%;
+    /* flex-wrap: wrap; */
+   }
+footer {
+   flex-wrap: nowrap;
+   margin: 0px -20px;
+    width: 101%;
+}
+
+}
+@media (max-width:400px) {
+
+    #header{
+        padding: 0px 50px;
+        position: sticky;
+    }
+    #navbar.active{
+
+        right: 0px;
+
+    }
+    #hero{
+        padding: 0 14px;
+        background-position: 55%;
+    }
+    #hero {
+        height: 70vh;
+       
+       /* background-position:  */
+    }
+    #hero h4 {
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    
+        
+    }
+    #hero h1 {
+        font-size: 30px;
+        margin-top: -2px;
+    }
+    p {
+        font-size: 10px;
+        margin: 0px 0px 10px 0px;
+        margin-top: 10px;
+    }
+    #hero button {
+        border-radius: 6px;
+        padding: 5px;
+        font-size: 10px;
+        
+    }
+    #feature .fe-box {
+        width: 235px;
+       
+        margin: 3px ;
+    }
+    #produt1 .pro {
+        width: 90%;
+    
+        padding: 21px 17px;
+       
+       
+        margin: 5px 0;
+        
+    }
+    #produt1 .pro img {
+        width: 81%;
+        height: 235px;
+    }
+    #banner h4 {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    #banner h2 {
+        font-size: 14px;
+        padding: 21px 0;
+        margin-bottom: 32px;
+    margin-top: -13px;
+    }
+    #banner button {
+        font-size: 10px;
+        padding: 7px 12px;
+        margin-top: -47px;
+       
+   
+}
+#banner {
+    
+    height: 20vh;
+}
+#sm-banner {
+    display: flex;
+   
+    flex-wrap: wrap;
+}
+#sm-banner h4 {
+    font-size: 16px;
+    
+}
+#sm-banner h2 {
+    margin-bottom: -7px;
+   margin-top: -4px;
+    font-size: 34px;
+    font-weight: 300;
+}
+#sm-banner .banner-box button {
+    font-size: 8px;
+
+    
+    padding: 7px 9px;
+   
+}
+#sm-banner .banner-box2 button {
+    font-size: 10px;
+    
+    padding: 1px 9px;
+   
+}
+#sm-banner .banner-box {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 10px;
+}
+#sm-banner .banner-box2 {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 33px;
+}
+ #sm-banner.section-p1 {
+    padding: 10px 0px;
+}
+#banner3 {
+    flex-wrap: nowrap;
+    width: 56%;
+    gap: 8px;
+    padding-left: 5px;
+}
+
+#banner3 .banner-box {
+    width: 55%;
+}#banner3 .banner-box3 {
+    width: 55%;
+}#banner3 .banner-box4 {
+    width: 55%;
+}
+
+#banner3 h2 {
+    font-size: 12px;
+}
+#new h4 {
+    font-size: 16px;
+    padding-left: 50px;
+    margin-top: -1px;
+}
+#new p {
+    font-size: 9px;
+    margin-top: 9px;
+    padding-left: 26px;
+}
+#new button {
+    font-size: 6px;
+    
+    padding: 5px 12px;
+   
+}
+#new input {
+    height: 1.325rem;
+    
+}
+#new {
+    height: 22vh;
+    margin-top: 10px;
+}
+
+#new .form {
+    margin-top: -20px;
+    padding-right: 0px;
+    padding-left: 36px;
+    width: 74%;
+}
+footer .colum img {
+    width: 27%;
+    height: 60px;
+  
+}
+footer .colum .logo {
+    width:60px;
+    height: 60px;
+}
+footer .colum img {
+   
+    padding-left: 0px;
+}
+footer .colum h4 {
+    
+    padding-left: 1px;
+    font-size: 10px;
+    padding-bottom: 11px;
+}
+footer .colum p {
+    margin-top: 1px;
+    font-size: 8px;
+    padding-left: 1px;
+}
+footer a {
+    font-size: 7px;
+    margin-bottom: 17px;
+    padding-left: 1px;
+}
+footer .follow .icon {
+    padding-left: 1px;
+    
+}
+footer {
+    flex-wrap: wrap;
+    margin: -5px -31px;
+    width: 88%;
+}
+}
